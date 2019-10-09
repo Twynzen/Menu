@@ -4,6 +4,8 @@ from tkinter import *
 ventana = Tk()
 ventana.geometry("300x200")
 ventana.title("Menus")
+label1 = Label(ventana, text="Bienvenido", font = ("Arial Bold",50))
+label1.grid(column = 0, row =0)
 
 def Funcion():
     print ("Funcion Ejecutada por usuario usando el menu")
@@ -23,5 +25,7 @@ menu_ayuda = Menu(menu_general) #menu ayuda
 menu_ayuda.add_command(label = "Acerca de...", command = Funcion)
 menu_ayuda.add_command(label = "Visit my site", command = Funcion)
 menu_general.add_cascade(label = "Ayuda", menu = menu_ayuda)
+
+
 
 ventana.mainloop() #bucle del programa
