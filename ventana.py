@@ -2,9 +2,9 @@
 from tkinter import *
 
 ventana = Tk()
-ventana.geometry("300x200")
+ventana.geometry("500x200")
 ventana.title("Menus")
-label1 = Label(ventana, text="Bienvenido", font = ("Arial Bold",50))
+label1 = Label(ventana, text="Bienvenido", font = ("Arial Bold",50),bg="white")
 label1.grid(column = 0, row =0)
 
 def Funcion():
